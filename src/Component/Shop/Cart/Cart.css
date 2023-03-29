@@ -1,0 +1,39 @@
+
+
+.Cart .cart_Detelse h2{
+
+    font-weight: 500px;
+    font-size: 25px;
+    text-align: center;
+    
+}
+
+.Cart .cart_Detelse p {
+
+    padding-left: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+.Cart .cart_Detelse h5{
+    padding-left: 10px;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.Cart .clearCart {
+    background-color: #FF3030;
+    padding: 10px 47px;
+    font-size: 19px;
+    color: white;
+    margin-left: 20px;
+}
+
+.Cart .reviewCart {
+    background-color: #FF9900;
+    padding: 13px 38px;
+    font-size: 17px;
+    color: white;
+    margin-left: 20px;
+    margin-top: 20px;
+}

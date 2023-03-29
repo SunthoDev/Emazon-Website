@@ -1,4 +1,6 @@
 // use local storage to manage cart data
+        // data add kora function 
+
 const addToDb = id => {
     let shoppingCart = getShoppingCart();
     // add quantity
@@ -13,6 +15,9 @@ const addToDb = id => {
     localStorage.setItem('shopping-cart', JSON.stringify(shoppingCart));
 }
 
+
+// kunu product remove kore
+
 const removeFromDb = id => {
     const shoppingCart = getShoppingCart();
     if (id in shoppingCart) {
@@ -21,9 +26,11 @@ const removeFromDb = id => {
     }
 }
 
+
+// finde the all shoping cart
+
 const getShoppingCart = () => {
     let shoppingCart = {};
-
     //get the shopping cart from local storage
     const storedCart = localStorage.getItem('shopping-cart');
     if (storedCart) {
@@ -31,6 +38,10 @@ const getShoppingCart = () => {
     }
     return shoppingCart;
 }
+
+
+
+// all shoping card remove kora
 
 const deleteShoppingCart = () => {
     localStorage.removeItem('shopping-cart');

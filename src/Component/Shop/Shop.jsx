@@ -1,6 +1,8 @@
 
 import React, { useEffect, useState } from 'react';
+import { addToDb } from '../../utilities/fakedb';
 import Product from '../Product/Product';
+import Cart from './Cart/Cart';
 import "./Shop.css"
 
 
@@ -14,20 +16,35 @@ const Shop = () => {
         .then(data=> setData(data))
     },[])
 
+    //total item add useState
+    let [cart,setCart]=useState([])
+    // button add to cart are work akana ja ay button fn ke korva
+    const buttonAddToCart=(Product)=>{
+        let newCart=[...cart,Product]
+        setCart(newCart)
+        addToDb(Product.id)
+    }
+
     return (
 
     <div className='Shop_Container'>
 
         <div className="Product_Container">
             {
-                data.map(allData => <Product data={allData} id={allData.id}></Product>)
+                data.map(allData => <Product 
+
+                    data={allData} 
+                    id={allData.id} 
+                    btnHandle={buttonAddToCart}>
+
+                </Product>)
             }
 
         </div>
 
         <div className="Cart_Container">
 
-            <h2>HEllow This  is Cart</h2>
+            <Cart carts={cart}> </Cart>
 
         </div>
      
