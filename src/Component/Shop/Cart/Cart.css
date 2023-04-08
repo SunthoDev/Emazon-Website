@@ -10,10 +10,10 @@
 
 .Cart .cart_Detelse p {
 
-    padding-left: 10px;
     font-weight: 500;
     font-size: 16px;
     font-family: sans-serif;
+    padding: 10px 10px 10px 10px;
 }
 .Cart .cart_Detelse h5{
     padding-left: 10px;

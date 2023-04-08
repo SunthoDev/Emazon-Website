@@ -1,0 +1,18 @@
+
+.orderReview{
+    background-color: aquamarine;
+    padding: 20px;
+    border-radius: 11px;
+    margin-left: 80px;
+
+}
+
+
+
+
+
+.Cart_Container_over{
+    position: absolute;
+    top: 80px;
+    right: 0;
+}
